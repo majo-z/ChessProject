@@ -35,8 +35,7 @@ public class ChessService {
     private PlayerRepository playerRepository;
     private GameRepository gameRepository;
     
-    //when anaconda installed instead of standalone python, @Value("${python-path}") was changed to @Value("{python-path}")
-    @Value("{python-path}") // read the value from application.properties
+    @Value("${python-path}") // read the value from application.properties
     private String pythonPath;
 
     @Autowired
